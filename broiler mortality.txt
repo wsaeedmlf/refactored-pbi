@@ -1,0 +1,57 @@
+jan 21
+los broiler
+
+broiler mortality
+% condemed 1.24
+
+http://procure.maplelodgefarms.com/Pages/BroilerMortalityTrend.aspx 
+
+
+daily procurement summary
+export as pdf.
+
+los broilers
+1.37
+
+http://procure.maplelodgefarms.com/ProcurementReport/DailyProcurementSumm.aspx
+
+
+AVG.PC.COND=OCONV(ICONV(TOTAL.WT.COND / TOTAL.WT * 100,'MD2'),'MD2')
+
+
+WT.COND += COND.PORTION
+
+PAY.REC<8
+
+
+
+
+GROWERCONDEMNEDPERC = OCONV(ICONV(((TOTAL.CONDEMN.WT/TOTAL.WEIGHT.SHIPPED) * 100),'MD2'),'MD2')
+
+
+AVG.PC.COND=OCONV(ICONV(TOTAL.WT.COND / TOTAL.WT * 100,'MD2'),'MD2')
+
+WT.COND = GRO.COND * AVG.KG
+
+
+pro105<4 * avgwt
+
+    0   13G   0% /run/u
+
+
+
+
+
+
+
+TOTAL.CONDEMN.WT.PERCENT = OCONV(ICONV((((GROWERCONDEMNED * ACTAVGWEIGHT) + ACT.CONDEMN.PORTION.TRAILER) / TOTAL.WEIGHT.SHIPPED) * 100,'MD2'),'MD2')
+
+
+GROWERCONDEMNED = GROWERCONDEMNED + PRO105.REC<4,D> (per scale plan tailer)
+
+ACTAVGWEIGHT = ( TOTALGROSS - TOTALTARE ) / BIRDSPROCESSED
+
+ACT.CONDEMN.PORTION.TRAILER += PRO105.REC<10>
+
+TOTAL.WEIGHT.SHIPPED = TOTAL.WEIGHT.SHIPPED + NET.WT.TRAILER
+NET.WT.TRAILER = GROSS.TRAILER - TARE.TRAILER
