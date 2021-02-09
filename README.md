@@ -9,4 +9,8 @@
 - test 3
 - test 4
 check feb 8 commint
+<<<<<<< HEAD
 8 feb locak changes
+=======
+another changes to check and verify local changes at the same time
+>>>>>>> 6b950cbb6a17f7826b458a6f4a2b671464ce965d
